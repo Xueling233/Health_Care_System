@@ -1,0 +1,18 @@
+#container1{
+    position: relative;
+    display: inline-block;
+}
+#container2{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+#container3{
+    position: relative;
+    display: inline-block;
+}
+.borderclass{
+    position: relative;
+    width: 100%;
+    padding-top:20px;
+}

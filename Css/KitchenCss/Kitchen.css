@@ -1,0 +1,29 @@
+﻿
+
+.borderclass{
+    border:1.5px solid #1e9db6;
+}
+.analyseword{
+    font-size: 1.2em;
+    display:inline-block;
+    float: left;
+    border:1px dashed #1e9db6;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.boil_water{
+    display:inline-block;
+}
+.echarttitle{
+    display:inline-block;
+}
+.analyseword h4{
+    margin-top: 10px;
+}
+.content{
+    width: 97.5%;
+    position: absolute;
+    margin: 0 auto;
+}

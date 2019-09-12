@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="utf-8" />
+<!-- 设置收藏图标 -->
+<link rel="stylesheet" href="../../Css/RoomMonitorCss/base.css" />
+<link rel="stylesheet" href="../../Css/RoomMonitorCss/style.css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title> 智慧健康照护系统</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+
+<!--webkit内核(极速核)，IE兼容内核，IE标准内核 -->
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+
+<!-- 引入本地css文件 -->
+<!-- Bootstrap core CSS     -->
+<link href="../../Css/MainCss/bootstrap.min.css" rel="stylesheet" />
+<link href="../../Css/MainCss/bootstrap.css" rel="stylesheet" />
+<!--  Light Bootstrap Dashboard core CSS    -->
+<link href="../../Css/MainCss/light-bootstrap-dashboard.css" rel="stylesheet"/>
+<!--     Fonts and icons     -->
+<link href="../../Css/MainCss/entypo-icon.css" rel="stylesheet" />
+<link href="../../Css/MainCss/font-awesome.min.css" rel="stylesheet">
+<link href="../../Css/MainCss/font-awesome.css" rel="stylesheet">
+<link href="../../Css/MainCss/pe-icon-7-stroke.css" rel="stylesheet" />
+<link href="../../Css/MainCss/Main.css" rel="stylesheet" />
+<link href="../../Css/MainCss/MainIcon.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../Css/RoomMonitorCss/zhujiemian.css" />
+<link rel="stylesheet" href="../../Css/RoomMonitorCss/MainMonitor.css" />
+<!-- end 引入CSS -->
+</head>
+
+<body>
+<!-- 右侧导航栏自适应样式 -->
+<div class="container-fluid-full">
+<div class="row-fluid">
+<!-- 右侧导航栏 -->
+<div id="sidebar" class="sidebar">
+<!--
+Tip 1:可以使用data-color改变导航栏颜色: data-color="blue | azure | green | orange | red | purple"
+Tip 2:可以使用data-image tag改变导航栏背景图片
+-->
+<!-- 右上方系统标志 -->
+<div class="logo">
+<a href="#" class="logo-text">
+健康照护系统
+<button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon">
+	<i class="fa fa-navicon"></i>
+</button>
+</a>
+<!-- 搜索框 -->
+<div class="input-group">
+<span class="input-group-addon">
+<a class="fa fa-search"></a></span>
+<input type="text" value="" class="form-control" placeholder="Search...">
+</div><!-- end搜索框 -->
+</div><!-- end logo -->
+<!--右侧导航栏缩小效果设置-->
+<div class="logo logo-mini">
+<a href="#" class="logo-text">
+<button id="minimizeSidebar1" class="btn btn-warning btn-fill btn-round btn-icon">
+	<i class="fa fa-tasks"></i>
+</button>
+</a>
+</div>
+<div class="sidebar-wrapper">
+<!--右中部用户介绍和设置-->
+<div class="user"><!--.sidebar .user css-->
+<div class="photo"><!-- 用户头像 -->
+	<img id="userimg"/>
+</div>
+<div class="info">
+	<a data-toggle="collapse" href="#collapseExample" class="collapsed">
+		张大爷
+		<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+	</a>
+	<div class="collapse" id="collapseExample"> <!--用户姓名下拉-->
+		<ul class="nav">
+			<li><a href="#">个人中心</a></li>
+			<li><a href="#">信息修改</a></li>
+			<li><a href="#">用户设置</a></li>
+		</ul>
+	</div>
+</div>
+</div><!--end user用户部分-->
+<!--begin 菜单部分,后续可增加模块-->
+<ul class="nav">
+<!--室内热点-->
+<li >
+	<a href="MainDashboard.html">
+		<i class="pe-7s-bell"></i>
+		<b class="rightbarfont">室内热点</b></a>
+</li>
+<!--实时数据-->
+<li class="active">
+	<a href="RoomMonitor1.html">
+		<i class="pe-7s-monitor"></i>
+		<b class="rightbarfont">实时数据</b></a>
+</li>
+<!--活动地图一级子菜单-->
+<li>
+	<a data-toggle="collapse" href="#activemap" class="collapsed">
+		<i class="pe-7s-map-marker"></i>
+		<b class="rightbarfont">活动地图</b>
+		<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+	</a>
+</li>
+<!--活动地图二级子菜单-->
+<ul class="collapse nav" id="activemap">
+	<!--电子围栏-->
+	<li>
+		<a href="Map.html">
+			<i class="pe-7s-plugin"></i>
+			<p>电子围栏</p></a>
+	</li>
+	<!--绘制区域-->
+	<li>
+		<a href="Mapdraw.html">
+			<i class="pe-7s-coffee"></i>
+			<p>设定区域</p></a>
+	</li>
+
+</ul>
+<!--室内活动一级子菜单-->
+<li>
+	<a data-toggle="collapse" href="#test" class="collapsed">
+		<i class="pe-7s-airplay"></i>
+		<b class="rightbarfont">室内活动</b>
+		<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+	</a>
+</li>
+<!--室内活动二级子菜单-->
+<ul class="collapse nav" id="test">
+	<!--饮食记录-->
+	<li>
+		<a href="Kitchen.html">
+			<i class="pe-7s-plugin"></i>
+			<p>饮食记录</p></a>
+	</li>
+	<!--客厅-->
+	<li>
+		<a href="Livingroom.html">
+			<i class="pe-7s-coffee"></i>
+			<p>客厅活动记录</p></a>
+	</li>
+	<!--睡眠记录-->
+	<li>
+		<a href="SleepStudy.html">
+			<i class="pe-7s-home"></i>
+			<p>睡眠记录</p></a></li>
+	<!--卫生间-->
+	<li>
+		<a href="Bathroom.html">
+			<i class="pe-7s-graph1"></i>
+			<p>卫生间活动记录</p></a>
+	</li>
+</ul>
+<!--生理指标-->
+<li>
+	<a href="Healthy.html">
+		<i class="pe-7s-bookmarks"></i>
+		<b class="rightbarfont">生理指标</b></a>
+</li>
+
+<!--安全警告一级菜单-->
+<li>
+	<a data-toggle="collapse" href="#notification" class="collapsed">
+		<i class="pe-7s-attention"></i>
+		<b class="rightbarfont">安全警告</b>
+		<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+	</a>
+</li>
+<!--安全警告二级子菜单-->
+<ul class="collapse nav" id="notification">
+	<!--sos呼救、跌倒监测、漏水、燃气泄漏-->
+	<li>
+		<a href="Danger.html">
+			<i class="pe-7s-plugin"></i>
+			<p>危险隐患</p></a>
+	</li>
+	<!--物品忘带-->
+	<li>
+		<a href="Notification.html">
+			<i class="pe-7s-coffee"></i>
+			<p>物品忘带</p></a>
+	</li>
+	<!--异常指标-->
+	<li>
+		<a href="Abnormal.html">
+			<i class="pe-7s-home"></i>
+			<p>异常指标</p></a></li>
+</ul>
+<!--日常报告菜单-->
+<!-- <li>
+		&lt;!&ndash;<a data-toggle="collapse" href="#normal" class="collapsed">&ndash;&gt;
+			&lt;!&ndash;<i class="pe-7s-monitor"></i>&ndash;&gt;
+			&lt;!&ndash;<b class="rightbarfont">日常报告</b>&ndash;&gt;
+			&lt;!&ndash;<b class="caret"></b>&ndash;&gt;
+			&lt;!&ndash;&lt;!&ndash; 点击下拉，用户可进行选择&ndash;&gt;&ndash;&gt;
+		&lt;!&ndash;</a>&ndash;&gt;
+	&lt;!&ndash;</li>-->
+<!--日常报告二级子菜单-->
+<!--<ul class="collapse nav" id="normal">-->
+<!--健康报告-->
+<li>
+	<a href="HealthyReport.html">
+		<i class="pe-7s-note2"></i>
+		<b class="rightbarfont">健康报告</b></a>
+</li>
+<!--习惯偏好报告-->
+<!--  <li>
+		<a href="HabitReport.html">
+			<i class="pe-7s-coffee"></i>
+			<p>习惯偏好报告</p></a>
+	</li>-->
+<!--</ul>-->
+<!--<li>
+	<a href="Control.html">
+		<i class="pe-7s-eyedropper"></i>
+		<b class="rightbarfont">控制界面</b></a>
+</li>-->
+</ul>
+<!--end 菜单部分,后续可增加模块-->
+</div><!--end sidebar-wrapper-->
+</div><!--sidebar-->
+
+<!-- 上方导航栏 -->
+<div class="main-panel"><!-- 设置高度影响右侧导航 -->
+<!-- 上方导航栏背景设置 -->
+<nav class="navbar navbar-default"><!-- 上方导航栏背景设置 -->
+<div class="container-fluid">
+<ul class="nav navbar-nav ">
+	<!--导航栏当前所在页面-->
+	<li class="nowbar">
+		<i class="pe-7s-home"><b>主界面</b></i>
+	</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+	<!--导航栏日期天气等信息 -->
+	<ul class="running-text date-top">
+		<li class="icon icon-calendar"></li>
+		<li><b id="ShowDate"></b></li>
+		<li class="icon icon-clock"></li>
+		<li><b id="ShowTime"></b></li>
+		<li id="WebWeather"></li>
+	</ul>
+</ul>
+
+</div><!-- end container-fluid -->
+</nav><!-- end navbar-default -->
+<!--设置插入echart -->
+
+<!-- 各个模块代码-->
+<div class="content">
+
+<div class="mainbottom1">
+<ul class="f-main-list">
+	<li class="f-main-itemleft f-main-itemHover">
+		<div class="fk-infoBlockWrap">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">生理指标</div>-->
+					<div class="f-info-desc">
+						<p>血糖：4.2umol</p>
+						<p>血压:112mmHg/72mmHg</p>
+						<p class="abnormalcolor">心率：110次/分</p>
+						<p>体温：36.5°C</p>
+						<p>BMI：23.8</p>
+					</div>
+					<a class="set_4_button2 raised hoverable f-button" href="Healthy.html">
+						<i class="anim"></i>
+						<span>生理指标</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">生理指标</div>
+					<div class="f-info-desc">心率指标异常,其他指标正常</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			生理指标
+		</div>
+	</li>
+	<li class="f-main-item f-main-itemHover">
+		<div class="fk-infoBlockWrap fk-infoBlockWrap-listedBrand">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico f-infoBlock-fasico-mulLine">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon f-infoIcon-listedBrand"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">网络建站</div>-->
+					<div class="f-info-desc">
+						<br>
+						<p class="abnormalcolor">昨晚睡眠质量：差</p>
+						<p></p>
+						<p class="abnormalcolor">睡眠效率：60%</p>
+						<br><br>
+						<br>
+					</div>
+
+					<a class="set_4_button2 raised hoverable f-button" href="SleepStudy.html">
+						<i class="anim"></i>
+						<span>睡眠质量</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">睡眠质量</div>
+					<div class="f-info-desc">睡眠异常</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			睡眠质量
+		</div>
+	</li>
+</ul>
+<ul class="f-main-list">
+	<li class="f-main-itemleft f-main-itemHover">
+		<div class="fk-infoBlockWrap fk-infoBlockWrap-funcRich">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico f-infoBlock-fasico-mulLine">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon f-infoIcon-funcRich"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">网络建站</div>-->
+					<div class="f-info-desc">
+						<br>
+						<p>早上7点吃饭</p>
+						<p>中午11点吃饭</p>
+						<p>晚上6点吃饭</p>
+						<br><br>
+					</div>
+
+					<a class="set_4_button2 raised hoverable f-button" href="Kitchen.html">
+						<i class="anim"></i>
+						<span>饮食情况</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">饮食情况</div>
+					<div class="f-info-desc">三餐饮食正常</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			饮食情况
+		</div>
+	</li>
+	<li class="f-main-item f-main-itemHover">
+		<div class="fk-infoBlockWrap fk-infoBlockWrap-model">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon f-infoIcon-model"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">网络建站</div>-->
+					<div class="f-info-desc">
+						<br>
+						<p>马桶使用次数:3次</p>
+						<p class="abnormalcolor">洗澡次数:2次</p>
+						<br><br><br>
+					</div>
+					<a class="set_4_button2 raised hoverable f-button" href="Bathroom.html">
+						<i class="anim"></i>
+						<span>卫生间使用</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">卫生间使用</div>
+					<div class="f-info-desc">马桶使用正常，洗澡异常</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			卫生间使用
+		</div>
+	</li>
+</ul>
+<ul class="f-main-list">
+	<li class="f-main-itemleft f-main-itemHover">
+		<div class="fk-infoBlockWrap fk-infoBlockWrap-oneKey">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico f-infoBlock-fasico-mulLine">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon f-infoIcon-oneKey"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">网络建站</div>-->
+					<div class="f-info-desc">
+						<br>
+						<p>忘带次数：2次</p><p></p>
+						<br><br><br><br>
+					</div>
+
+					<a class="set_4_button2 raised hoverable f-button" href="Notification.html">
+						<i class="anim"></i>
+						<span>物品忘带</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">物品忘带</div>
+					<div class="f-info-desc">物品忘带正常</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			物品忘带
+		</div>
+	</li>
+	<li class="f-main-item f-main-itemHover">
+		<div class="fk-infoBlockWrap fk-infoBlockWrap-site3to1">
+			<div class="f-wrapBg"></div>
+			<div class="fk-infoBlock f-infoBlock-fasico">
+				<div class="f-bg"></div>
+				<div class="f-infoIcon f-infoIcon-site3to1"></div>
+				<div class="f-infoWrap">
+					<!--<div class="f-info-title">网络建站</div>-->
+					<div class="f-info-desc">
+						<br>
+						<p>燃气：报警2次</p>
+						<p>SOS:无</p>
+						<p>跌倒：1次</p>
+						<br><br>
+
+					</div>
+
+					<a class="set_4_button2 raised hoverable f-button" href="Danger.html">
+						<i class="anim"></i>
+						<span>安全隐患</span>
+					</a>
+				</div>
+			</div>
+			<div class="fk-infoBlock f-infoBlock-normal">
+				<div class="f-bg"></div>
+				<div class="f-infoWrap">
+					<div class="f-info-title">安全隐患</div>
+					<div class="f-info-desc">燃气异常、跌倒呼救</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-infoBlock-name">
+			安全隐患
+		</div>
+	</li>
+</ul>
+</div>
+<div class="mainbottom">
+<div class="maintitle">
+<div class="item-tx">实时异常：<label>睡眠效率低、心率过快</label></div></div>
+<div class="mainright" id="monitor">
+</div>
+</div>
+</div>
+</div>
+</div><!-- end main-panel -->
+</div><!-- end row-fluid -->
+<!-- main-painel -->
+
+
+
+<!--   Js文件引入  -->
+<script src="../../Js/CommonJs/jquery.min.js" type="text/javascript"></script>
+<script src="../../Js/CommonJs/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../Js/CommonJs/bootstrap.min.js" type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard Core javascript and methods -->
+<script src="../../Js/MainJs/light-bootstrap-dashboard.js"></script>
+<script src="../../Js/MainJs/Main.js"></script>
+<script type="text/javascript" src="../../Js/RoomMonitorJs/highcharts.js" ></script>
+<script type="text/javascript" src="../../Js/RoomMonitorJs/RoomMonitor.js" ></script>
+<!--  end Js文件引入  -->
+</body>
+</html>

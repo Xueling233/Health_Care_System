@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- 设置收藏图标 -->
+<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title> 智慧健康照护系统</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+<!-- 引入本地css文件 -->
+<!-- Bootstrap core CSS     -->
+<link href="../../Css/MainCss/bootstrap.min.css" rel="stylesheet" />
+<link href="../../Css/MainCss/bootstrap.css" rel="stylesheet" />
+<!--  Light Bootstrap Dashboard core CSS    -->
+<link href="../../Css/MainCss/light-bootstrap-dashboard.css" rel="stylesheet"/>
+<!--     Fonts and icons     -->
+<link href="../../Css/MainCss/entypo-icon.css" rel="stylesheet" />
+<link href="../../Css/MainCss/font-awesome.min.css" rel="stylesheet">
+	<link href="../../Css/MainCss/font-awesome.css" rel="stylesheet">
+<link href="../../Css/MainCss/pe-icon-7-stroke.css" rel="stylesheet" />
+<link href="../../Css/MainCss/Main.css" rel="stylesheet" />
+<link href="../../Css/MainCss/MainIcon.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../Css/CommonCss/CalendaySelect.css" media="screen" type="text/css" />
+<link href="../../Css/HealthyCss/xl.css" rel="stylesheet">
+<link href="../../Css/XueYaCss/picture.css" rel="stylesheet">
+<!-- end 引入CSS -->
+</head>
+
+<body>
+<!-- 右侧导航栏自适应样式 -->
+<div class="container-fluid-full">
+<div class="row-fluid">
+<!-- 右侧导航栏 -->
+	<div id="sidebar" class="sidebar">
+		<!--
+    Tip 1:可以使用data-color改变导航栏颜色: data-color="blue | azure | green | orange | red | purple"
+    Tip 2:可以使用data-image tag改变导航栏背景图片
+    -->
+		<!-- 右上方系统标志 -->
+		<div class="logo">
+			<a href="#" class="logo-text">
+				健康照护系统
+				<button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon">
+					<i class="fa fa-navicon"></i>
+				</button>
+			</a>
+			<!-- 搜索框 -->
+			<div class="input-group">
+				<span class="input-group-addon">
+  				<a class="fa fa-search"></a></span>
+				<input type="text" value="" class="form-control" placeholder="Search...">
+			</div><!-- end搜索框 -->
+		</div><!-- end logo -->
+		<!--右侧导航栏缩小效果设置-->
+		<div class="logo logo-mini">
+			<a href="#" class="logo-text">
+				<button id="minimizeSidebar1" class="btn btn-warning btn-fill btn-round btn-icon">
+					<i class="fa fa-tasks"></i>
+				</button>
+			</a>
+		</div>
+		<div class="sidebar-wrapper">
+			<!--右中部用户介绍和设置-->
+			<div class="user"><!--.sidebar .user css-->
+				<div class="photo"><!-- 用户头像 -->
+					<img id="userimg"/>
+				</div>
+				<div class="info">
+					<a data-toggle="collapse" href="#collapseExample" class="collapsed">
+						张大爷
+						<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+					</a>
+					<div class="collapse" id="collapseExample"> <!--用户姓名下拉-->
+						<ul class="nav">
+							<li><a href="#">个人中心</a></li>
+							<li><a href="#">信息修改</a></li>
+							<li><a href="#">用户设置</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!--end user用户部分-->
+			<!--begin 菜单部分,后续可增加模块-->
+			<ul class="nav">
+				<!--室内热点-->
+				<li>
+					<a href="MainDashboard.html">
+						<i class="pe-7s-bell"></i>
+						<b class="rightbarfont">室内热点</b></a>
+				</li>
+				<!--实时数据-->
+				<li >
+					<a href="RoomMonitor1.html">
+						<i class="pe-7s-monitor"></i>
+						<b class="rightbarfont">实时数据</b></a>
+				</li>
+				<!--活动地图一级子菜单-->
+				<li>
+					<a data-toggle="collapse" href="#activemap" class="collapsed">
+						<i class="pe-7s-map-marker"></i>
+						<b class="rightbarfont">活动地图</b>
+						<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+					</a>
+				</li>
+				<!--活动地图二级子菜单-->
+				<ul class="collapse nav" id="activemap">
+					<!--电子围栏-->
+					<li>
+						<a href="Map.html">
+							<i class="pe-7s-plugin"></i>
+							<p>电子围栏</p></a>
+					</li>
+					<!--绘制区域-->
+					<li>
+						<a href="Mapdraw.html">
+							<i class="pe-7s-coffee"></i>
+							<p>设定区域</p></a>
+					</li>
+
+				</ul>
+				<!--室内活动一级子菜单-->
+				<li>
+					<a data-toggle="collapse" href="#test" class="collapsed">
+						<i class="pe-7s-airplay"></i>
+						<b class="rightbarfont">室内活动</b>
+						<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+					</a>
+				</li>
+				<!--室内活动二级子菜单-->
+				<ul class="collapse nav" id="test">
+					<!--饮食记录-->
+					<li>
+						<a href="Kitchen.html">
+							<i class="pe-7s-plugin"></i>
+							<p>饮食记录</p></a>
+					</li>
+					<!--客厅-->
+					<li>
+						<a href="Livingroom.html">
+							<i class="pe-7s-coffee"></i>
+							<p>客厅活动记录</p></a>
+					</li>
+					<!--睡眠记录-->
+					<li>
+						<a href="SleepStudy.html">
+							<i class="pe-7s-home"></i>
+							<p>睡眠记录</p></a></li>
+					<!--卫生间-->
+					<li>
+						<a href="Bathroom.html">
+							<i class="pe-7s-graph1"></i>
+							<p>卫生间活动记录</p></a>
+					</li>
+				</ul>
+				<!--生理指标-->
+				<li class="active">
+					<a href="Healthy.html">
+						<i class="pe-7s-bookmarks"></i>
+						<b class="rightbarfont">生理指标</b></a>
+				</li>
+
+				<!--安全警告一级菜单-->
+				<li>
+					<a data-toggle="collapse" href="#notification" class="collapsed">
+						<i class="pe-7s-attention"></i>
+						<b class="rightbarfont">安全警告</b>
+						<b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+					</a>
+				</li>
+				<!--安全警告二级子菜单-->
+				<ul class="collapse nav" id="notification">
+					<!--sos呼救、跌倒监测、漏水、燃气泄漏-->
+					<li>
+						<a href="Danger.html">
+							<i class="pe-7s-plugin"></i>
+							<p>危险隐患</p></a>
+					</li>
+					<!--物品忘带-->
+					<li>
+						<a href="Notification.html">
+							<i class="pe-7s-coffee"></i>
+							<p>物品忘带</p></a>
+					</li>
+					<!--异常指标-->
+					<li>
+						<a href="Abnormal.html">
+							<i class="pe-7s-home"></i>
+							<p>异常指标</p></a></li>
+				</ul>
+				<!--日常报告菜单-->
+				<!-- <li>
+            &lt;!&ndash;<a data-toggle="collapse" href="#normal" class="collapsed">&ndash;&gt;
+              &lt;!&ndash;<i class="pe-7s-monitor"></i>&ndash;&gt;
+              &lt;!&ndash;<b class="rightbarfont">日常报告</b>&ndash;&gt;
+              &lt;!&ndash;<b class="caret"></b>&ndash;&gt;
+              &lt;!&ndash;&lt;!&ndash; 点击下拉，用户可进行选择&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;</a>&ndash;&gt;
+          &lt;!&ndash;</li>-->
+				<!--日常报告二级子菜单-->
+				<!--<ul class="collapse nav" id="normal">-->
+				<!--健康报告-->
+				<li>
+					<a href="HealthyReport.html">
+						<i class="pe-7s-note2"></i>
+						<b class="rightbarfont">健康报告</b></a>
+				</li>
+				<!--习惯偏好报告-->
+				<!--  <li>
+            <a href="HabitReport.html">
+              <i class="pe-7s-coffee"></i>
+              <p>习惯偏好报告</p></a>
+          </li>-->
+				<!--</ul>-->
+				<!--<li>
+          <a href="Control.html">
+            <i class="pe-7s-eyedropper"></i>
+            <b class="rightbarfont">控制界面</b></a>
+        </li>-->
+			</ul>
+			<!--end 菜单部分,后续可增加模块-->
+		</div><!--end sidebar-wrapper-->
+	</div><!--sidebar-->
+<!-- 上方导航栏 -->
+<div class="main-panel"><!-- 设置高度影响右侧导航 -->
+<!-- 上方导航栏背景设置 -->
+	<nav class="navbar navbar-default"><!-- 上方导航栏背景设置 -->
+		<div class="container-fluid">
+			<ul class="nav navbar-nav ">
+				<!--导航栏当前所在页面-->
+				<li class="nowbar">
+					<i class="pe-7s-home"><b>生理指标</b></i>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<!--导航栏日期天气等信息 -->
+				<ul class="running-text date-top">
+					<li class="icon icon-calendar"></li>
+					<li><b id="ShowDate"></b></li>
+					<li class="icon icon-clock"></li>
+					<li><b id="ShowTime"></b></li>
+					<li id="WebWeather"></li>
+				</ul>
+			</ul>
+		</div><!-- end container-fluid -->
+	</nav><!-- end navbar-default -->
+	<!--设置插入echart -->
+	<!-- 各个模块代码-->
+	<div class="content">
+	<!-- 体温-->
+	<div class="twbp borderclass" id="container"></div>
+	<div class="tw borderclass" id="tw" style="margin-left: 3%"></div>
+	<div  class="xl1">&nbsp;&nbsp;&nbsp;
+		   <img  src=" ../../Images/LoginImage/2-6.png" style="width: 15px; height: 15px" >总次数：<b>12次</b><br>
+		&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-3.png" style="width: 15px; height: 15px" >异常次数：<b>4次</b><br>
+		&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-2.png" style="width: 15px; height: 15px" >异常分析：一周内连续4次体温偏高<br>
+		&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-1.png" style="width: 15px; height: 15px" >处理措施：发送短信通知子女<br>
+	</div>
+	<!-- 心率-->
+	<div>
+		<div class="twbp borderclass" id="container1"></div>
+		<div class="xl borderclass" id="xl" style="margin-left: 3%"></div>
+		<div  class="xl1">
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-6.png" style="width: 16px; height: 16px" >总次数：<b>12次</b><br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-3.png" style="width: 16px; height: 16px" >异常次数：<b>3次</b>(心率过速2次，心率过缓1次)<br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-2.png" style="width: 16px; height: 16px" >异常分析：白天连续两次心率过速,晚间出现一次心率过缓现象<br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-1.png" style="width: 16px; height: 16px" >处理措施：短信通知子女,及时就医诊断<br></div>
+		</div>
+	<!-- BMI-->
+	<div >
+			<div class="twbp borderclass" id="timeBMI"></div>
+			<div class="xl borderclass" id="BMIcontainer" style="margin-left: 3%"></div>
+			<div  class="xl1">
+				&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-6.png" style="width: 16px; height: 16px" >总次数：<b>15次</b><br>
+				&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-3.png" style="width: 16px; height: 16px" >异常次数：<b>1次</b><br>
+				&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-2.png" style="width: 16px; height: 16px" >异常分析：根据世界卫生组织BMI的标准,老人本月出现一次BMI过重情况<br>
+				&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-1.png" style="width: 16px; height: 16px" >处理措施：短信通知子女,密切关注老人的身体情况<br>
+			</div>
+		</div>
+	<!-- 血压-->
+	<div>
+		<div style="float:left;">
+			<div class="borderclass" id="br1"></div>
+			<div class="borderclass" id="br2"></div>
+		</div>
+		<div class="xl borderclass" id="bj" style="margin-left: 3%"></div>
+		<div  class="xl1">
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-6.png" style="width: 16px; height: 16px" >总次数：<b>7次</b><br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-3.png" style="width: 16px; height: 16px" >异常次数：<b>3次</b>(血压偏高2次，偏低1次)<br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-2.png" style="width: 16px; height: 16px" >异常分析：一周内出现两次血压偏高,一次血压偏低现象<br>
+			&nbsp;&nbsp;&nbsp;<img  src=" ../../Images/LoginImage/2-1.png" style="width: 16px; height: 16px" >处理措施：短信通知子女,及时就医诊断</p>
+		</div>
+	</div>
+	<!-- 血糖-->
+	<div>
+	<div style="float:left">
+		<div class="borderclass" id="xt1"></div>
+		<div class="borderclass" id="xt2"></div>
+	</div>
+	<div id="bloodsuger" class="xl borderclass" style="margin-left: 3%"></div>
+	<div class="bloodsugertable">
+	<table style="margin-left: 2.8%">
+	<thead>
+						<tr>
+							<th rowspan="2">日期</th>
+							<th rowspan="2">凌晨</th>
+							<th colspan="2">早餐</th>
+							<th colspan="2">午餐</th>
+							<th colspan="2">晚餐</th>
+							<th rowspan="2">睡前</th>
+
+						</tr>
+						<tr>
+							<th>前</th>
+							<th>后</th>
+							<th>前</th>
+							<th>后</th>
+							<th>前</th>
+							<th>后</th>
+						</tr>
+						</thead>
+	<tbody>
+						<tr>
+							<th>4.1</th>
+							<td>3.5</td>
+							<td class="lowcolor">3.0</td>
+							<td>5.0</td>
+							<td class="lowcolor">3.0</td>
+							<td>4.8</td>
+							<td>4.4</td>
+							<td class="highcolor">5.6</td>
+							<td>5.1</td>
+						</tr>
+						<tr>
+							<th>4.1</th>
+							<td>4.1</td>
+							<td>4.0</td>
+							<td>5.6</td>
+							<td>4.8</td>
+							<td class="highcolor">6.4</td>
+							<td>5.1</td>
+							<td class="highcolor">5.7</td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<th>4.3</th>
+							<td>3.4</td>
+							<td>3.5</td>
+							<td>5.2</td>
+							<td>4.5</td>
+							<td>4.8</td>
+							<td>4.3</td>
+							<td>5.0</td>
+							<td>4.7</td>
+						</tr>
+						<tr>
+							<th>4.4</th>
+							<td>3.7</td>
+							<td>3.6</td>
+							<td>4.9</td>
+							<td>4.7</td>
+							<td>5.6</td>
+							<td>5.1</td>
+							<td>5.5</td>
+							<td>4.6</td>
+						</tr>
+						<tr>
+							<th>4.5</th>
+							<td>4.8</td>
+							<td>4.5</td>
+							<td>5.4</td>
+							<td>4.4</td>
+							<td>5.8</td>
+							<td>5.1</td>
+							<td class="highcolor">6.4</td>
+							<td>6.0</td>
+						</tr>
+						<tr>
+							<th>4.6</th>
+							<td>3.6</td>
+							<td>3.5</td>
+							<td>4.4</td>
+							<td>4.4</td>
+							<td>4.7</td>
+							<td>4.3</td>
+							<td>4.8</td>
+							<td>4.6</td>
+						</tr>
+						<tr>
+							<th>4.7</th>
+							<td>4.4</td>
+							<td>4.6</td>
+							<td>4.3</td>
+							<td>5.6</td>
+							<td>6.1</td>
+							<td>5.8</td>
+							<td>6.7</td>
+							<td>5.9</td>
+						</tr>
+						</tbody>
+	</table>
+	</div>
+	<div  class="xl1">
+		&nbsp&nbsp&nbsp<img  src=" ../../Images/LoginImage/2-6.png" style="width: 16px; height: 16px" >总次数：<b>7次</b><br>
+		&nbsp&nbsp&nbsp<img  src=" ../../Images/LoginImage/2-3.png" style="width: 16px; height: 16px" >异常次数：<b>3次</b>
+		(血糖偏低4次，血糖3次)<br>
+		&nbsp&nbsp&nbsp<img  src=" ../../Images/LoginImage/2-2.png" style="width: 16px; height: 16px" >异常分析：餐前血糖过低
+		,餐后血糖上升过快<br>
+		&nbsp&nbsp&nbsp<img  src=" ../../Images/LoginImage/2-1.png" style="width: 16px; height: 16px" >处理措施：短信通知子女,注意控制血糖</p>
+	</div>
+	</div>
+</div><!-- end content-->
+</div><!-- end main-panel -->
+</div><!-- end row-fluid -->
+</div><!-- end container-fluid-full-->
+
+<!--   Js文件引入  -->
+<script src="../../Js/CommonJs/jquery.min.js" type="text/javascript"></script>
+<script src="../../Js/CommonJs/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../Js/CommonJs/bootstrap.min.js" type="text/javascript"></script>
+<!-- Light Bootstrap Dashboard Core javascript and methods -->
+<script src="../../Js/MainJs/light-bootstrap-dashboard.js"></script>
+<script src="../../Js/MainJs/Main.js"></script>
+<script src="../../Js/CommonJs/echarts-gl.js"></script>
+<script src="../../Js/CommonJs/echarts.js"></script>
+<script src="../../Js/CommonJs/calendar.js"></script>
+<!--  体温文件引入  -->
+<script src="../../Js/HealthyJs/tw.js"></script>
+<script src="../../Js/HealthyJs/twbp.js"></script>
+<script src="../../Js/HealthyJs/xl.js"></script>
+<script src="../../Js/HealthyJs/xlbp.js"></script>
+	<!--  BMI文件引入  -->
+	<script src="../../Js/HealthyJs/BMI.js"></script>
+	<script src="../../Js/HealthyJs/Time'BMI.js"></script>
+<!--  血压文件引入  -->
+<script  src="../../Js/HealthyJs/BloodPressure.js"></script>
+<script  src="../../Js/HealthyJs/LowPressure.js"></script>
+<script  src="../../Js/HealthyJs/HighPressure.js"></script>
+<!--  血糖文件引入  -->
+<script  src="../../Js/HealthyJs/XueTang1.js"></script>
+<script  src="../../Js/HealthyJs/XueTang3.js"></script>
+<script  src="../../Js/HealthyJs/XueTang4.js"></script>
+<!--  end Js文件引入  -->
+
+</body>
+</html>

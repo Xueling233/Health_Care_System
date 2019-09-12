@@ -1,0 +1,64 @@
+#container1{
+    position: relative;
+    display: inline-block;
+}
+#container2{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+#container3{
+    position: relative;
+    display: inline-block;
+}
+.borderclass{
+    position: relative;
+    width: 95.7%;
+    padding-top:20px;
+    border:1.5px solid #1e9db6;
+    border-radius: 20px;
+    margin-left: 6px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.borderclass1{
+    margin-left: 6px;
+    margin-top: 20px;
+    position: relative;
+    width: 95.7%;
+    border:1.5px solid #1e9db6;
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 505px;
+}
+.borderclass2{
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+#tab1{
+
+    font-size: 20px;
+    font-family: '楷体';
+    float: left;
+    margin-left: 56%;
+    margin-top:20px;
+}
+#tab2{
+    width:780px;
+    border:1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.5em;
+    margin-left: 6%;
+    float: left;
+    font-family: '楷体';
+    margin-top: 5%;
+ }
+#tab2 tr,td{
+    border: 1px solid #1e9db6;
+}
+td{
+    font-family: '华文宋体';
+    font-weight: bold;
+}

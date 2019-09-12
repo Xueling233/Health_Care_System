@@ -1,0 +1,63 @@
+﻿
+.battery{
+    width: 500px;
+    height:400px;
+    position: relative;
+    float: left;
+    padding: 0 0 0 0;
+}
+
+.battery1{
+     width: 525px;
+     height:400px;
+     position: relative;
+     float: left;
+     padding: 0 0 0 0;
+    margin: 10px 0 0 0;
+
+ }
+
+.battery2{
+    width: 505px;
+    height:400px;
+    position: relative;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+.iframe1{
+    width: 50%;
+    height: 340px;
+    position: relative;
+    float: left;
+    margin: 50px 0 10px 25px;
+    padding: 20px 0 0 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    frameborder:0;
+}
+
+.iframe2{
+    width: 50%;
+    height: 360px;
+    position: relative;
+    float: left;
+    margin: 50px 0 0 0;
+    padding: 50px 0 0 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    frameborder:0;
+}
+
+.iframe3{
+    width: 50%;
+    height: 340px;
+    position: relative;
+    float: left;
+    margin: 60px 0 0 20px;
+    padding: 20px 0 0 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    frameborder:0;
+}

@@ -1,0 +1,20 @@
+.bj{
+    width:1200px;
+    height:400px;
+    position: relative;
+
+}
+.br1{
+    width:600px;
+    height:500px;
+    position:relative;
+float:left;
+    padding:28px 4px 4px 4px;
+}
+.br2{
+    width:600px;
+    height:500px;
+    position:relative;
+    float:right;
+    padding:28px 4px 4px 4px;
+}

@@ -1,0 +1,454 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title> 智慧健康照护系统</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+<!-- Canonical SEO -->
+<link rel="canonical" href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro"/>
+<!--  Social tags      -->
+<meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap dashboard, bootstrap, css3 dashboard, bootstrap admin, light bootstrap dashboard, frontend, responsive bootstrap dashboard">
+<meta name="description" content="Forget about boring dashboards, get an admin template designed to be simple and beautiful.">
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta itemprop="description" content="Forget about boring dashboards, get an admin template designed to be simple and beautiful.">
+<meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg">
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@creativetim">
+<meta name="twitter:title" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta name="twitter:description" content="Forget about boring dashboards, get an admin template designed to be simple and beautiful.">
+<meta name="twitter:creator" content="@creativetim">
+<meta name="twitter:image" content="http://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg">
+<meta name="twitter:data1" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta name="twitter:label1" content="Product Type">
+<meta name="twitter:data2" content="$20">
+<meta name="twitter:label2" content="Price">
+<!-- Open Graph data -->
+<meta property="og:title" content="Light Bootstrap Dashboard PRO by Creative Tim" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/dashboard.html" />
+<meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg"/>
+<meta property="og:description" content="Forget about boring dashboards, get an admin template designed to be simple and beautiful." />
+<meta property="og:site_name" content="Creative Tim" />
+<!-- 引入本地css文件 -->
+<!-- Bootstrap core CSS     -->
+<link href="../../Css/MainCss/bootstrap.min.css" rel="stylesheet" />
+<link href="../../Css/MainCss/bootstrap.css" rel="stylesheet" />
+<!--  Light Bootstrap Dashboard core CSS    -->
+<link href="../../Css/MainCss/light-bootstrap-dashboard.css" rel="stylesheet"/>
+<!-- 右边设置样式 -->
+<link href="../../Css/MainCss/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+  <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+
+<!--    date time and weather    -->
+<link href="../../Css/MainCss/entypo-icon.css" rel="stylesheet" />
+<!--     Fonts and icons     -->
+<link href="../../Css/MainCss/font-awesome.min.css" rel="stylesheet">
+<link href="../../Css/MainCss/font-awesome.css" rel="stylesheet">
+<link href="../../Css/MainCss/pe-icon-7-stroke.css" rel="stylesheet" />
+<link href="../../Css/MainCss/Main.css" rel="stylesheet" />
+<link href="../../Css/MainCss/MainIcon.css" rel="stylesheet" />
+  <!--加载检索信息窗口-->
+</head>
+<body>
+
+<div class="container-fluid-full"><!-- 右侧导航栏自适应样式 -->
+<div class="row-fluid">
+<!-- 右侧导航栏 -->
+  <div id="sidebar" class="sidebar">
+    <!--
+    Tip 1:可以使用data-color改变导航栏颜色: data-color="blue | azure | green | orange | red | purple"
+    Tip 2:可以使用data-image tag改变导航栏背景图片
+    -->
+    <!-- 右上方系统标志 -->
+    <div class="logo">
+      <a href="#" class="logo-text">
+        健康照护系统
+        <button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon">
+          <i class="fa fa-navicon"></i>
+        </button>
+      </a>
+      <!-- 搜索框 -->
+      <div class="input-group">
+				<span class="input-group-addon">
+  				<a class="fa fa-search"></a></span>
+        <input type="text" value="" class="form-control" placeholder="Search...">
+      </div><!-- end搜索框 -->
+    </div><!-- end logo -->
+    <!--右侧导航栏缩小效果设置-->
+    <div class="logo logo-mini">
+      <a href="#" class="logo-text">
+        <button id="minimizeSidebar1" class="btn btn-warning btn-fill btn-round btn-icon">
+          <i class="fa fa-tasks"></i>
+        </button>
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <!--右中部用户介绍和设置-->
+      <div class="user"><!--.sidebar .user css-->
+        <div class="photo"><!-- 用户头像 -->
+          <img id="userimg"/>
+        </div>
+        <div class="info">
+          <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+            张大爷
+            <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+          </a>
+          <div class="collapse" id="collapseExample"> <!--用户姓名下拉-->
+            <ul class="nav">
+              <li><a href="#">个人中心</a></li>
+              <li><a href="#">信息修改</a></li>
+              <li><a href="#">用户设置</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!--end user用户部分-->
+      <!--begin 菜单部分,后续可增加模块-->
+      <ul class="nav">
+        <!--室内热点-->
+        <li>
+          <a href="MainDashboard.html">
+            <i class="pe-7s-bell"></i>
+            <b class="rightbarfont">室内热点</b></a>
+        </li>
+        <!--实时数据-->
+        <li >
+          <a href="RoomMonitor1.html">
+            <i class="pe-7s-monitor"></i>
+            <b class="rightbarfont">实时数据</b></a>
+        </li>
+        <!--活动地图一级子菜单-->
+        <li class="active">
+          <a data-toggle="collapse" href="#activemap" class="collapsed">
+            <i class="pe-7s-map-marker"></i>
+            <b class="rightbarfont">活动地图</b>
+            <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+          </a>
+        </li>
+        <!--活动地图二级子菜单-->
+        <ul class="collapse nav" id="activemap">
+          <!--电子围栏-->
+          <li>
+            <a href="Map.html">
+              <i class="pe-7s-plugin"></i>
+              <p>电子围栏</p></a>
+          </li>
+          <!--绘制区域-->
+          <li class="active">
+            <a href="Mapdraw.html">
+              <i class="pe-7s-coffee"></i>
+              <p>设定区域</p></a>
+          </li>
+
+        </ul>
+        <!--室内活动一级子菜单-->
+        <li>
+          <a data-toggle="collapse" href="#test" class="collapsed">
+            <i class="pe-7s-airplay"></i>
+            <b class="rightbarfont">室内活动</b>
+            <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+          </a>
+        </li>
+        <!--室内活动二级子菜单-->
+        <ul class="collapse nav" id="test">
+          <!--饮食记录-->
+          <li>
+            <a href="Kitchen.html">
+              <i class="pe-7s-plugin"></i>
+              <p>饮食记录</p></a>
+          </li>
+          <!--客厅-->
+          <li>
+            <a href="Livingroom.html">
+              <i class="pe-7s-coffee"></i>
+              <p>客厅活动记录</p></a>
+          </li>
+          <!--睡眠记录-->
+          <li>
+            <a href="SleepStudy.html">
+              <i class="pe-7s-home"></i>
+              <p>睡眠记录</p></a></li>
+          <!--卫生间-->
+          <li>
+            <a href="Bathroom.html">
+              <i class="pe-7s-graph1"></i>
+              <p>卫生间活动记录</p></a>
+          </li>
+        </ul>
+        <!--生理指标-->
+        <li>
+          <a href="Healthy.html">
+            <i class="pe-7s-bookmarks"></i>
+            <b class="rightbarfont">生理指标</b></a>
+        </li>
+
+        <!--安全警告一级菜单-->
+        <li>
+          <a data-toggle="collapse" href="#notification" class="collapsed">
+            <i class="pe-7s-attention"></i>
+            <b class="rightbarfont">安全警告</b>
+            <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+          </a>
+        </li>
+        <!--安全警告二级子菜单-->
+        <ul class="collapse nav" id="notification">
+          <!--sos呼救、跌倒监测、漏水、燃气泄漏-->
+          <li>
+            <a href="Danger.html">
+              <i class="pe-7s-plugin"></i>
+              <p>危险隐患</p></a>
+          </li>
+          <!--物品忘带-->
+          <li>
+            <a href="Notification.html">
+              <i class="pe-7s-coffee"></i>
+              <p>物品忘带</p></a>
+          </li>
+          <!--异常指标-->
+          <li>
+            <a href="Abnormal.html">
+              <i class="pe-7s-home"></i>
+              <p>异常指标</p></a></li>
+        </ul>
+        <!--日常报告菜单-->
+        <!-- <li>
+            &lt;!&ndash;<a data-toggle="collapse" href="#normal" class="collapsed">&ndash;&gt;
+              &lt;!&ndash;<i class="pe-7s-monitor"></i>&ndash;&gt;
+              &lt;!&ndash;<b class="rightbarfont">日常报告</b>&ndash;&gt;
+              &lt;!&ndash;<b class="caret"></b>&ndash;&gt;
+              &lt;!&ndash;&lt;!&ndash; 点击下拉，用户可进行选择&ndash;&gt;&ndash;&gt;
+            &lt;!&ndash;</a>&ndash;&gt;
+          &lt;!&ndash;</li>-->
+        <!--日常报告二级子菜单-->
+        <!--<ul class="collapse nav" id="normal">-->
+        <!--健康报告-->
+        <li>
+          <a href="HealthyReport.html">
+            <i class="pe-7s-note2"></i>
+            <b class="rightbarfont">健康报告</b></a>
+        </li>
+        <!--习惯偏好报告-->
+        <!--  <li>
+            <a href="HabitReport.html">
+              <i class="pe-7s-coffee"></i>
+              <p>习惯偏好报告</p></a>
+          </li>-->
+        <!--</ul>-->
+        <!--<li>
+          <a href="Control.html">
+            <i class="pe-7s-eyedropper"></i>
+            <b class="rightbarfont">控制界面</b></a>
+        </li>-->
+      </ul>
+      <!--end 菜单部分,后续可增加模块-->
+    </div><!--end sidebar-wrapper-->
+  </div><!--sidebar-->
+<!-- 上方导航栏 -->
+<div class="main-panel">
+ <nav class="navbar navbar-default"><!-- 上方导航栏背景设置 -->
+    <div class="container-fluid">
+      <ul class="nav navbar-nav ">
+        <!--导航栏当前所在页面-->
+        <li class="nowbar">
+            <i class="pe-7s-home"><b>活动地图&gt设定区域</b></i>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--导航栏日期天气等信息 -->
+        <ul class="running-text date-top">
+          <li class="icon icon-calendar"></li>
+          <li><b id="ShowDate"></b></li>
+          <li class="icon icon-clock"></li>
+          <li><b id="ShowTime"></b></li>
+          <li id="WebWeather"></li>
+        </ul>
+    </ul>
+
+    </div><!-- end container-fluid -->
+  </nav><!-- end navbar-default -->
+ <!-- 主界面中间嵌入地图，显示老人活动轨迹 根据id container1来绘制-->
+  <div class="content" id="map">
+  </div><!-- end content -->
+</div><!-- main-painel -->
+</div><!-- end row-fluid -->
+</div><!-- end container-fluid-full -->
+
+<!--   Core JS Files and PerfectScrollbar library inside jquery.ui   -->
+<!--调用百度api的脚本-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pCKfU4rixWH1WjPZ4KHTY5gGx5EBy5c5"></script>
+<script src="../../Js/CommonJs/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../Js/MapJs/GeoUtils_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+<script src="../../Js/CommonJs/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../Js/CommonJs/bootstrap.min.js" type="text/javascript"></script>
+<!--  Forms Validations Plugin -->
+<script src="../../Js/CommonJs/jquery.validate.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../../Js/CommonJs/bootstrap-notify.js"></script>
+<!-- Light Bootstrap Dashboard Core javascript and methods -->
+<script src="../../Js/MainJs/light-bootstrap-dashboard.js"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="../../Js/MainJs/Main.js"></script>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map('map');
+    map.centerAndZoom(new BMap.Point(118.317269,32.281046), 16);
+    map.enableScrollWheelZoom();
+    var overlays = [];
+    var str="";
+    var overlaycomplete = function(e){
+        overlays.push(e.overlay);
+    };
+    var styleOptions = {
+        strokeColor:"red",    //边线颜色。
+        fillColor:"red",      //填充颜色。当参数为空时，圆形将没有填充效果。
+        strokeWeight: 3,       //边线的宽度，以像素为单位。
+        strokeOpacity: 0.8,	   //边线透明度，取值范围0 - 1。
+        fillOpacity: 0.6,      //填充的透明度，取值范围0 - 1。
+        strokeStyle: 'solid' //边线的样式，solid或dashed。
+    }
+    //实例化鼠标绘制工具
+    var drawingManager = new BMapLib.DrawingManager(map, {
+        isOpen: false, //是否开启绘制模式
+        enableDrawingTool: true, //是否显示工具栏
+        drawingToolOptions: {
+            anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+            offset: new BMap.Size(5, 5), //偏离值
+            drawingModes : [BMAP_DRAWING_POLYGON],
+        },
+
+        circleOptions: styleOptions, //圆的样式
+        polylineOptions: styleOptions, //线的样式
+        polygonOptions: styleOptions, //多边形的样式
+        rectangleOptions: styleOptions //矩形的样式
+    });
+    //添加鼠标绘制工具监听事件，用于获取绘制结果
+    drawingManager.addEventListener('overlaycomplete', overlaycomplete);
+    function clearAll() {
+        for(var i = 0; i < overlays.length; i++){
+            map.removeOverlay(overlays[i]);
+        }
+        str="";
+        overlays.length = 0
+    }
+    var point_marker = new BMap.Point(118.32177035, 32.2821506);
+    var marker = new BMap.Marker(point_marker);// 创建点
+    function jc()
+    {
+        str="";
+        var result = BMapLib.GeoUtils.isPointInPolygon(point_marker, overlays[0]);
+        //alert(result);
+        var overlay=overlays[0].getPath();
+        for(var j = 0; j < overlay.length-1; j++)
+        {
+            var grid =overlay[j];
+            str+=overlay[j].lng+","+overlay[j].lat+";";
+        }
+        str+=overlay[overlay.length-1].lng+","+overlay[overlay.length-1].lat;
+        //alert(overlay[0].lng+","+overlay[0].lat+"\n"+overlay[1].lng+","+overlay[1].lat+"\n"+overlay[2].lng+","+overlay[2].lat);\
+        //alert(str);
+        $.ajax({
+            headers:{
+                'Authorization':'JWT '+sessionStorage.getItem("token")  //注意：jwt后面有个空格
+
+            },
+            url: 'http://192.168.84.199/apis/api/jdwd/root/1/',
+            type: 'patch',
+            data: {"jdwd":str},
+            success: function(msg){
+                console.log(msg);
+            },  //成功返回数据后调用的方法
+            error: function(){
+                console.log("接口不通");
+            }
+        });
+        alert("保存成功");
+    }
+
+
+
+</script>
+<script>
+    // 定义一个控件类,即function
+    function ZoomControl(){
+// 默认停靠位置和偏移量
+        this.defaultAnchor = BMAP_ANCHOR_TOP_RIGHT;
+        this.defaultOffset = new BMap.Size(10,100,0, 0);
+    }
+
+    // 通过JavaScript的prototype属性继承于BMap.Control
+    ZoomControl.prototype = new BMap.Control();
+
+
+    // 自定义控件必须实现自己的initialize方法,并且将控件的DOM元素返回
+    // 在本方法中创建个div元素作为控件的容器,并将其添加到地图容器中
+    ZoomControl.prototype.initialize = function(map){
+        // 创建一个DOM元素
+        var btn = document.createElement("input");
+        btn.setAttribute("type","button");
+        btn.setAttribute("value","清空绘制图形");
+        // 设置样式
+        btn.style.backgroundColor = "#DDDDDD";
+        btn.style.color="blue";
+        btn.style.width="120px";
+        btn.style.height="30px";
+        btn.style.align="center";
+        btn.onclick = function(e){
+            clearAll();
+        }
+        // 添加DOM元素到地图中
+        map.getContainer().appendChild(btn);
+        // 将DOM元素返回
+        return btn;
+    }
+    // 创建控件
+    var myZoomCtrl = new ZoomControl();
+    // 添加到地图当中
+    map.addControl(myZoomCtrl);
+</script>
+<script>
+    // 定义一个控件类,即function
+    function ZoomControl2(){
+// 默认停靠位置和偏移量
+        this.defaultAnchor = BMAP_ANCHOR_TOP_RIGHT;
+        this.defaultOffset = new BMap.Size(10,60,0, 0);
+    }
+
+
+    // 通过JavaScript的prototype属性继承于BMap.Control
+    ZoomControl2.prototype = new BMap.Control();
+    // 自定义控件必须实现自己的initialize方法,并且将控件的DOM元素返回
+    // 在本方法中创建个div元素作为控件的容器,并将其添加到地图容器中
+    ZoomControl2.prototype.initialize = function(map){
+        // 创建一个DOM元素
+        var btn2 = document.createElement("input");
+        btn2.setAttribute("type","button");
+        btn2.setAttribute("value","保存绘制图形");
+        // 设置样式
+        btn2.style.backgroundColor = "#DDDDDD";
+        btn2.style.color="blue";
+        btn2.style.width="120px";
+        btn2.style.height="30px";
+        btn2.style.align="center";
+        // 绑定事件,点击一次放大两级
+        btn2.onclick = function(e){
+            jc();
+        }
+        // 添加DOM元素到地图中
+        map.getContainer().appendChild(btn2);
+        // 将DOM元素返回
+        return btn2;
+    }
+    // 创建控件
+    var myZoomCtrl2 = new ZoomControl2();
+    // 添加到地图当中
+    map.addControl(myZoomCtrl2);
+</script>
+</body>
+</html>

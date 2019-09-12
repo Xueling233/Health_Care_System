@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>智慧健康照护系统</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="Css/LoginCss/LoginStyle.css" />
+<link rel="stylesheet" href="Css/LoginCss/UserForm.css" />
+<link rel="stylesheet" href="Css/LoginCss/BackgroundStyle.css" />
+
+
+<body>
+
+<div class="title">
+<h1>智慧健康照护系统</h1>
+<!--注:后期修改域名-->
+	<h2>www.smarthome.net</h2>
+<div class="connect">
+<p>欢迎您的登录!</p>
+</div>
+	<form  method="post" id="loginForm">
+        <!--用户名样式,带图片-->
+        <div  class="input_outer">
+            <span class="u_username"></span>
+			<input type="text" name="username"  class="text" placeholder="用户名" autocomplete="off"/>
+		</div>
+        <!--密码样式,带图片-->
+		<div class="input_outer">
+            <span class="u_userpassword"></span>
+			<input type="password" name="password" class="text" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+        <!--验证码样式,带图片-->
+        <div class="input_outer">
+            <span class="u_userverify"></span>
+            <canvas id="canvas" class="verifycode" ></canvas>
+			<input name="verifycode" type="text"  class="text" maxlength="4" placeholder="验证码" autocomplete="off" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<!--链接刷新验证码-->
+		<span class="changecode"><a href="#" id="changeImg" >看不清，换一张</a></span>
+
+
+
+
+    <!--注:登陆界面-->
+	   <div >
+		<button id="submit" type="submit" class="loginbutton">登 录</button>
+	   </div>
+	</form>
+<!--    &lt;!&ndash;注:注册界面&ndash;&gt;
+	<div >
+	<a href="Html/Register.html">
+		<button type="button" class="registerbutton">注 册</button>
+	</a>
+	</div>-->
+</div>
+
+
+<!--背景样式-->
+<div class="box-a">
+	<div class="m-2-1">
+<div class="m-5">
+	<div id="m-5-id-1">
+		<div id="m-5-2">
+			<div id="m-5-id-2">
+			</div>
+			<div id="m-5-id-3"></div>
+		</div>
+	</div>
+</div>
+		<!--左上方动态-->
+<div class="m-10"></div>
+<div class="m-xz7"></div>
+		<!--左上方动态-->
+<div class="m-xz8 xzleft"></div>
+<div class="m-xz9"></div>
+<div class="m-xz9-1"></div>
+
+<div class="m-8"></div>
+		<!--右上方-->
+<div class="m-11">
+	<div class="m-k-1"><div class="t1"></div></div>
+	<div class="m-k-2"><div class="t2"></div></div>
+	<div class="m-k-3"><div class="t3"></div></div>
+	<div class="m-k-4"><div class="t4"></div></div>
+	<div class="m-k-5"><div class="t5"></div></div>
+	<div class="m-k-6"><div class="t6"></div></div>
+	<div class="m-k-7"><div class="t7"></div></div>
+</div>
+<div class="m-14"><div class="ss"></div></div>
+
+
+		<!--左下方-->
+<div class="m-15-a">
+	<div class="m-15-k">
+		<div class="m-15xz1">
+			<div class="m-15-dd2"></div>
+		</div>
+	</div>
+</div>
+
+
+		<!--右边中部，转轮-->
+<div class="m-16"></div>
+<div class="m-17"></div>
+<div class="m-18 xzleft"></div>
+<div class="m-19"></div>
+<div class="m-20 xzleft"></div>
+<div class="m-21"></div>
+<div class="m-22"></div>
+<div class="m-23 xzleft"></div>
+		<div class="m-24" id="localtime"></div>
+
+	</div>
+</div>
+
+<script src="Js/LoginJs/jquery.min.js"></script>
+<script src="Js/LoginJs/jquery-1.8.3.min.js"></script>
+<!--引用Jquery表单验证内容-->
+<script src="Js/LoginJs/Login.js"></script>
+<!--图片全屏展示-->
+<script src="Js/LoginJs/supersized.3.2.7.min.js"></script>
+<!--自定义背景图片自动更换-->
+<script src="Js/LoginJs/supersized-init.js"></script>
+<!--Jquery表单验证框架-->
+<script src="Js/LoginJs/jquery.validate.min.js?var1.14.0"></script>
+<!--页面背景动态脚本-->
+<script src="Js/LoginJs/Background.js"></script>
+</body>
+</html>

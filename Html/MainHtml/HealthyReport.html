@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- 设置收藏图标 -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title> 智慧健康照护系统</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- 引入本地css文件 -->
+    <!-- Bootstrap core CSS     -->
+    <link href="../../Css/MainCss/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Css/MainCss/bootstrap.css" rel="stylesheet" />
+    <!--  Light Bootstrap Dashboard core CSS    -->
+    <link href="../../Css/MainCss/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <!--     Fonts and icons     -->
+    <link href="../../Css/MainCss/entypo-icon.css" rel="stylesheet" />
+    <link href="../../Css/MainCss/font-awesome.min.css" rel="stylesheet">
+    <link href="../../Css/MainCss/font-awesome.css" rel="stylesheet">
+    <link href="../../Css/MainCss/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="../../Css/MainCss/Main.css" rel="stylesheet" />
+    <link href="../../Css/MainCss/MainIcon.css" rel="stylesheet" />
+    <link href="../../Css/DeviceBatteryCss/DeviceBattery.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/HealthyReportCss/jiankang.css">
+    <!-- end 引入CSS -->
+</head>
+
+<body>
+<!-- 右侧导航栏自适应样式 -->
+<div class="container-fluid-full">
+    <div class="row-fluid">
+        <!-- 右侧导航栏 -->
+      <div id="sidebar" class="sidebar">
+        <!--
+        Tip 1:可以使用data-color改变导航栏颜色: data-color="blue | azure | green | orange | red | purple"
+        Tip 2:可以使用data-image tag改变导航栏背景图片
+        -->
+        <!-- 右上方系统标志 -->
+        <div class="logo">
+          <a href="#" class="logo-text">
+            健康照护系统
+            <button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon">
+              <i class="fa fa-navicon"></i>
+            </button>
+          </a>
+          <!-- 搜索框 -->
+          <div class="input-group">
+				<span class="input-group-addon">
+  				<a class="fa fa-search"></a></span>
+            <input type="text" value="" class="form-control" placeholder="Search...">
+          </div><!-- end搜索框 -->
+        </div><!-- end logo -->
+        <!--右侧导航栏缩小效果设置-->
+        <div class="logo logo-mini">
+          <a href="#" class="logo-text">
+            <button id="minimizeSidebar1" class="btn btn-warning btn-fill btn-round btn-icon">
+              <i class="fa fa-tasks"></i>
+            </button>
+          </a>
+        </div>
+        <div class="sidebar-wrapper">
+          <!--右中部用户介绍和设置-->
+          <div class="user"><!--.sidebar .user css-->
+            <div class="photo"><!-- 用户头像 -->
+              <img id="userimg"/>
+            </div>
+            <div class="info">
+              <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                张大爷
+                <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+              </a>
+              <div class="collapse" id="collapseExample"> <!--用户姓名下拉-->
+                <ul class="nav">
+                  <li><a href="#">个人中心</a></li>
+                  <li><a href="#">信息修改</a></li>
+                  <li><a href="#">用户设置</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!--end user用户部分-->
+          <!--begin 菜单部分,后续可增加模块-->
+          <ul class="nav">
+            <!--室内热点-->
+            <li>
+              <a href="MainDashboard.html">
+                <i class="pe-7s-bell"></i>
+                <b class="rightbarfont">室内热点</b></a>
+            </li>
+            <!--实时数据-->
+            <li >
+              <a href="RoomMonitor1.html">
+                <i class="pe-7s-monitor"></i>
+                <b class="rightbarfont">实时数据</b></a>
+            </li>
+            <!--活动地图一级子菜单-->
+            <li>
+              <a data-toggle="collapse" href="#activemap" class="collapsed">
+                <i class="pe-7s-map-marker"></i>
+                <b class="rightbarfont">活动地图</b>
+                <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+              </a>
+            </li>
+            <!--活动地图二级子菜单-->
+            <ul class="collapse nav" id="activemap">
+              <!--电子围栏-->
+              <li>
+                <a href="Map.html">
+                  <i class="pe-7s-plugin"></i>
+                  <p>电子围栏</p></a>
+              </li>
+              <!--绘制区域-->
+              <li>
+                <a href="Mapdraw.html">
+                  <i class="pe-7s-coffee"></i>
+                  <p>设定区域</p></a>
+              </li>
+
+            </ul>
+            <!--室内活动一级子菜单-->
+            <li>
+              <a data-toggle="collapse" href="#test" class="collapsed">
+                <i class="pe-7s-airplay"></i>
+                <b class="rightbarfont">室内活动</b>
+                <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+              </a>
+            </li>
+            <!--室内活动二级子菜单-->
+            <ul class="collapse nav" id="test">
+              <!--饮食记录-->
+              <li>
+                <a href="Kitchen.html">
+                  <i class="pe-7s-plugin"></i>
+                  <p>饮食记录</p></a>
+              </li>
+              <!--客厅-->
+              <li>
+                <a href="Livingroom.html">
+                  <i class="pe-7s-coffee"></i>
+                  <p>客厅活动记录</p></a>
+              </li>
+              <!--睡眠记录-->
+              <li>
+                <a href="SleepStudy.html">
+                  <i class="pe-7s-home"></i>
+                  <p>睡眠记录</p></a></li>
+              <!--卫生间-->
+              <li>
+                <a href="Bathroom.html">
+                  <i class="pe-7s-graph1"></i>
+                  <p>卫生间活动记录</p></a>
+              </li>
+            </ul>
+            <!--生理指标-->
+            <li>
+              <a href="Healthy.html">
+                <i class="pe-7s-bookmarks"></i>
+                <b class="rightbarfont">生理指标</b></a>
+            </li>
+
+            <!--安全警告一级菜单-->
+            <li>
+              <a data-toggle="collapse" href="#notification" class="collapsed">
+                <i class="pe-7s-attention"></i>
+                <b class="rightbarfont">安全警告</b>
+                <b class="caret"></b><!-- 点击下拉，用户可进行选择-->
+              </a>
+            </li>
+            <!--安全警告二级子菜单-->
+            <ul class="collapse nav" id="notification">
+              <!--sos呼救、跌倒监测、漏水、燃气泄漏-->
+              <li>
+                <a href="Danger.html">
+                  <i class="pe-7s-plugin"></i>
+                  <p>危险隐患</p></a>
+              </li>
+              <!--物品忘带-->
+              <li>
+                <a href="Notification.html">
+                  <i class="pe-7s-coffee"></i>
+                  <p>物品忘带</p></a>
+              </li>
+              <!--异常指标-->
+              <li>
+                <a href="Abnormal.html">
+                  <i class="pe-7s-home"></i>
+                  <p>异常指标</p></a></li>
+            </ul>
+            <!--日常报告菜单-->
+            <!-- <li>
+                &lt;!&ndash;<a data-toggle="collapse" href="#normal" class="collapsed">&ndash;&gt;
+                  &lt;!&ndash;<i class="pe-7s-monitor"></i>&ndash;&gt;
+                  &lt;!&ndash;<b class="rightbarfont">日常报告</b>&ndash;&gt;
+                  &lt;!&ndash;<b class="caret"></b>&ndash;&gt;
+                  &lt;!&ndash;&lt;!&ndash; 点击下拉，用户可进行选择&ndash;&gt;&ndash;&gt;
+                &lt;!&ndash;</a>&ndash;&gt;
+              &lt;!&ndash;</li>-->
+            <!--日常报告二级子菜单-->
+            <!--<ul class="collapse nav" id="normal">-->
+            <!--健康报告-->
+            <li class="active">
+              <a href="HealthyReport.html">
+                <i class="pe-7s-note2"></i>
+                <b class="rightbarfont">健康报告</b></a>
+            </li>
+            <!--习惯偏好报告-->
+            <!--  <li>
+                <a href="HabitReport.html">
+                  <i class="pe-7s-coffee"></i>
+                  <p>习惯偏好报告</p></a>
+              </li>-->
+            <!--</ul>-->
+            <!--<li>
+              <a href="Control.html">
+                <i class="pe-7s-eyedropper"></i>
+                <b class="rightbarfont">控制界面</b></a>
+            </li>-->
+          </ul>
+          <!--end 菜单部分,后续可增加模块-->
+        </div><!--end sidebar-wrapper-->
+      </div><!--sidebar-->
+        <!-- 上方导航栏 -->
+        <div class="main-panel"><!-- 设置高度影响右侧导航 -->
+            <!-- 上方导航栏背景设置 -->
+            <nav class="navbar navbar-default"><!-- 上方导航栏背景设置 -->
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav ">
+                        <!--导航栏当前所在页面-->
+                        <li class="nowbar">
+                            <i class="pe-7s-home"><b>健康报告</b></i>
+                        </li>
+                    </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <!--导航栏日期天气等信息 -->
+                    <ul class="running-text date-top">
+                      <li class="icon icon-calendar"></li>
+                      <li><b id="ShowDate"></b></li>
+                      <li class="icon icon-clock"></li>
+                      <li><b id="ShowTime"></b></li>
+                      <li id="WebWeather"></li>
+                    </ul>
+                  </ul>
+                </div><!-- end container-fluid -->
+            </nav><!-- end navbar-default -->
+            <!--设置插入echart -->
+<!-- 各个模块代码-->
+ <div class="content">
+ <div class="borderclass">
+ <h4 style="margin-left: 2%">健康指标</h4>
+ <!--左侧左边的图-->
+ <div class="abc">
+    <div class="a">
+        <div class="b">
+            <img src="../../Images/HealthyReportImage/1.png" class="topimg"/>
+        </div>
+        <div class="c">
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d1">血糖正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--//第二个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/2.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d2">血压正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第三个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/3.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d3">BMI正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第四个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px"><img src="../../Images/HealthyReportImage/4.png" class="topimg"/></div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d4">心率正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第五个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/5.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d5">体温正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第六个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/6.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d6">厕所正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第七个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/7.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d7">淋浴正常，请继续保持。</div>
+    </div>
+ </div>
+ <!--第八个图-->
+ <div class="a">
+    <div class="b" style="border-radius: 60px">
+        <img src="../../Images/HealthyReportImage/8.png" class="topimg"/>
+    </div>
+    <div class="c" >
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="d d8">饮食正常，请继续保持。</div>
+    </div>
+ </div>
+ </div>
+ <!--左侧右边的图-->
+ <div class="aaaa">
+    <div class="tabletitle">
+        <table>
+            <tr class="noborder">
+                <th></th>
+                <th class="glyphicon glyphicon-hand-down"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr class="tableradius">
+                <th class="th1">低血糖</th>
+                <th class="th2">正常血糖</th>
+                <th class="th3">糖尿病</th>
+                <th class="th4">糖耐量受损</th>
+                <th class="th5">空腹血糖受损</th>
+            </tr>
+        </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+            <tr class="noborder">
+                <th></th>
+                <th class="glyphicon glyphicon-hand-down"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr class="tableradius">
+                <th class="th1">低血压</th>
+                <th class="th2">正常血压</th>
+                <th class="th3">高血压</th>
+                <th class="th4">1级高血压</th>
+                <th class="th5">2级高血压</th>
+                <th class="th6">3级高血压</th>
+            </tr>
+        </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+        <tr class="noborder">
+            <th></th>
+            <th class="glyphicon glyphicon-hand-down"></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="tableradius">
+            <th class="th1">偏瘦</th>
+            <th class="th2">正常</th>
+            <th class="th3">超重</th>
+            <th class="th4">偏胖</th>
+            <th class="th5">肥胖</th>
+            <th class="th6">重度肥胖</th>
+        </tr>
+    </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+        <tr class="noborder">
+            <th></th>
+            <th></th>
+            <th  class="glyphicon glyphicon-hand-down"></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="tableradius">
+            <th class="th1">窦性心率过缓</th>
+            <th class="th2">心率过缓</th>
+            <th class="th3">心率正常</th>
+            <th class="th4">心率过速</th>
+        </tr>
+    </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+            <tr class="noborder">
+                <th></th>
+                <th class="glyphicon glyphicon-hand-down"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr class="tableradius">
+                <th class="th1">体温过低</th>
+                <th class="th2">体温正常</th>
+                <th class="th3">低烧</th>
+                <th class="th4">中低烧</th>
+                <th class="th5">高烧</th>
+            </tr>
+        </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+            <tr class="noborder">
+                 <th></th>
+                 <th class="glyphicon glyphicon-hand-down"></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+            </tr>
+            <tr class="tableradius">
+                  <th class="th1">时间过短</th>
+                  <th class="th2">时间正常</th>
+                  <th class="th3">时间过长</th>
+            </tr>
+        </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+           <tr class="noborder">
+             <th></th>
+             <th class="glyphicon glyphicon-hand-down"></th>
+             <th></th>
+             <th></th>
+             <th></th>
+           </tr>
+           <tr class="tableradius">
+              <th class="th1">时间过短</th>
+              <th class="th2">时间正常</th>
+              <th class="th3">时间过长</th>
+          </tr>
+        </table>
+    </div>
+    <div class="tablemargin">
+        <table>
+           <tr class="noborder">
+             <th></th>
+             <th class="glyphicon glyphicon-hand-down"></th>
+             <th></th>
+             <th></th>
+             <th></th>
+           </tr>
+           <tr class="tableradius">
+              <th class="th1">次数过少</th>
+              <th class="th2">次数正常</th>
+              <th class="th3">次数过多</th>
+          </tr>
+        </table>
+    </div>
+    </div>
+ </div>
+ <!--右侧界面-->
+ <div class="borderclass1">
+    <div  class="borderclass2">
+        <h4 style="margin-left: 2%">身体数值达标率</h4>
+        <div id="xt1"></div>
+    </div>
+    <div class="borderclass3">
+        <div style="margin-left: 2%">
+        <h4>健康报告</h4>
+        <p>健康风险评价是估计具有一定健康特征的个人会不会<br>在一定时间内发生某种疾病或健康的结果。</p>
+        <table class="table2">
+           <tr class="noborder">
+             <th></th>
+             <th></th>
+             <th class="glyphicon glyphicon-hand-down"></th>
+             <th></th>
+             <th></th>
+           </tr>
+           <tr class="tableradius">
+             <th class="th1">极差</th>
+             <th class="th2">差</th>
+             <th class="th3">一般</th>
+             <th class="th4">良</th>
+             <th class="th5">优</th>
+         </tr>
+    </table>
+    <div class="p1">
+        <p>分析:根据各项指标，老人4月-5月身体健康评级为一般</p>
+    </div>
+ </div>
+ </div>
+</div><!-- content -->
+</div><!-- main-painel -->
+</div>
+</div><!-- end -->
+</div>
+
+
+<!--   Js文件引入  -->
+    <script src="../../Js/CommonJs/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Js/CommonJs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../Js/CommonJs/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Light Bootstrap Dashboard Core javascript and methods -->
+    <script src="../../Js/MainJs/light-bootstrap-dashboard.js"></script>
+    <script src="../../Js/MainJs/Main.js"></script>
+    <script src="../../Js/CommonJs/echarts-gl.js"></script>
+    <script src="../../Js/CommonJs/echarts.js"></script>
+    <script src="../../Js/HealthyReportJS/shentiJs.js"></script>
+<!--  end Js文件引入  -->
+
+</body>
+</html>

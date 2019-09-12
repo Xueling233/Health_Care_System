@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url("animate-tool.css");
+
+.regularly-box{width:100%;height: auto; position: relative; border:3px solid #e7bc71; margin:3px auto 0 auto;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius: 8px;}
+.regularly-head{height:30px; line-height: 30px; padding:8px 20px; border-bottom: 2px solid #e7bc71;}
+.regularly-head strong{font-size: 24px; color: #646464; display: inline-block;}
+.regularly-head label{font-size: 15px; color: #ed7c7c; display: inline-block; margin-left: 5px;}
+.regularly-contBody{height: 300px;}
+.regularly-item-list{width: 100%; height: 200px;}
+.regularly-item-list li{width: 100%; height:inherit; float: left; display: inline; position: relative; border-right: 2px solid #e7bc71;}
+.regularly-item-list li.last{border-right: 0;width: 100%;}
+.regularly-item-list li:not(.last):after{content: "";position: absolute; width: 2px; height:10px; bottom: 46px; right: -2px; background: #fff;}
+.regularly-item-list li .flip-box{width:100%; height:inherit;padding:13px;position: absolute;left: 0;top: 0;
+    border: 1.5px solid #1e9db6;
+    border-radius:20px;
+    overflow: hidden;}
+.regularly-item-list li .item-title{
+    width:336px; height:50px;
+    line-height: 50px;
+    background: #e7bc71;
+    color: #fff; font-size:25px;
+    margin:5px auto; font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 3px #c8c8c8;
+    -moz-box-shadow: 0 2px 3px #c8c8c8;
+    -webkit-box-shadow: 0 2px 3px #c8c8c8;
+    text-shadow:0 2px 3px #9a5555;
+    -moz-text-shadow:0 2px 3px #9a5555;
+    -webkit-text-shadow:0 2px 3px #9a5555;
+    overflow: hidden;
+    border-radius: 15px;
+    text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .item-tx{width:auto;text-align: left;  margin: 0 auto;  font-size: 2em; color: #dea23b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .item-tx label{color: rgba(235, 11, 10, 0.73); font-size: 1em;}
+.regularly-item-list li .flip-item-pic{width: 150px; height: 150px; overflow:hidden; margin:10px auto; text-align: center;}
+.regularly-item-list li .flip-item-pic img{max-width: 100%; max-height: 100%; vertical-align: middle;}
+.regularly-item-list li .flip-foot{width: 100%; height: 46px; line-height: 46px; position: absolute; padding:0 5px; left: 0px; bottom: 0px; color: #fff; text-align: center; font-size: 18px; background: #e7bc71; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .flip-lists{width: auto; display: block; height: 100%; overflow: hidden;}
+.regularly-item-list li .flip-lists dd p{height:10px; line-height: 0px; font-size: 15px; text-indent: 4px;}
+.regularly-item-list li .flip-lists dd .flip-itmes-info strong{display: inline-block; width:90px; vertical-align: middle; text-align: center; font-size: 24px; color: #ff7e00;}
+.regularly-item-list li .flip-lists dd .flip-itmes-info .to-day{display: inline-block; height: 24px; line-height: 24px; vertical-align: middle; min-width: 32px; max-width: 80px; padding: 0 10px; background: #e5e5e5; font-size: 14px; color: #969696; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .flip-lists dd .flip-itmes-info .to-day em{font-style: normal; font-size: 15px;}
+.regularly-item-list li .flip-lists dd .flip-itmes-info .to-price{width: auto; max-width:160px; height: 32px; line-height: 32px; position: absolute; right: 0px; top: 0; color: #969696; text-align: right; font-size: 14px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .flip-lists dd .flip-itmes-info .to-price label{display: inline-block; font-size: 15px;}
+.regularly-item-list li .flip-lists dd .flip-itmes-ctrl{font-size: 14px;}
+.regularly-item-list li .flip-lists dd .progress-info{width:200px; height: 32px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.regularly-item-list li .flip-lists dd .itmes-progress{width:85px; height: 8px; background: #e5e5e5; position: relative; margin: 0 10px; margin-top:12px; overflow: hidden; border-radius:4px;-webkit-border-radius:4px;-moz-border-radius: 4px;}
+.regularly-item-list li .flip-lists dd .itmes-progress>span{width:0;display: block; position: absolute; height: 100%;left: 0; top: 0; background: #ff7e00; border-radius:4px;-webkit-border-radius:4px;-moz-border-radius: 4px;}
+.regularly-item-list li .flip-lists dd .ctrl-btn{width: 104px; height: 26px; line-height: 26px; font-size: 15px; border: 2px solid; display: inline-block; text-align: center; position: absolute; bottom:4px;right: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; border-radius:8px;-webkit-border-radius:8px;-moz-border-radius: 8px;}
+.regularly-item-list li .flip-lists dd a.ctrl-btn{border-color: #ff7e00; background: #ff7e00; color: #fff;}
+.regularly-item-list li .flip-lists dd span.ctrl-btn{border-color: #969696; background: #fff; color: #969696;cursor: default;}
+
+
+
+
+
+.abnormalcolor{
+    color: red;
+    font-weight: bold;
+}
+
+.walkfont{
+    margin-left: 3%;
+    display: inline-block;
+    text-align: center;
+
+}

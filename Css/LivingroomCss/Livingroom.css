@@ -1,0 +1,117 @@
+.livingroomstyle{
+    width: 100%;
+    border:1.5px solid #1e9db6;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius:10px;
+    height: 50%;
+    position: relative;
+}
+#sofa{
+    display: inline-block;
+    float: left;
+}
+#tv{
+    display: inline-block;
+    float: left;
+}
+#aircondition{
+    display: inline-block;
+    float: left;
+}
+#sofatable{
+    display: inline-block;
+    font-size: 1em;
+}
+#tvtable{
+    display: inline-block;
+    font-size: 1em;
+}
+#airconditiontable{
+    display: inline-block;
+    font-size: 1em;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border-top: 1px solid #888888;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #888888;
+    font-size: 1em;
+    width: 47.8%;
+    margin-right: 2%;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+
+th,td {
+    padding: 5px 10px;
+    border-top: none;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-left: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td {
+    background-color: #EFEFEF;
+    text-align: center;
+    font-family: "Times New Roman";
+}
+p{
+    font-family: "Times New Roman";
+}
+thead tr th{
+    background-color: rgba(59, 135, 189, 0.35);
+    color: white;
+}
+tbody tr th{
+    background-color: rgba(238, 40, 18, 0.35);
+    color: white;
+}
+/* 第1行、左端的元素 */
+tr:first-child th:first-child,
+tr:first-child td:first-child {
+    border-top-left-radius: 10px; /* 左上角的圆角*/
+}
+/*第1行、右端的元素 */
+tr:first-child th:last-child {
+    border-top-right-radius: 10px; /* 右上角的圆角*/
+}
+/*使用thead时的tbody的第1行、左端的元素*/
+thead ~ tbody tr:first-child th:first-child,
+thead ~ tbody tr:first-child td:first-child {
+    border-top-left-radius: 0; /*每一个左上角*/
+}
+/*使用thead时的tbody的第1行、右端的元素*/
+#sofatable thead ~ tbody tr:first-child td:last-child {
+    border-top-right-radius: 0; /*每一个右上角 */
+}
+/* tbody的最后1行、左端的元素*/
+#sofatable tbody tr:last-child th:first-child,
+#sofatable tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* 左下角的圆角*/
+}
+#airconditiontable tbody tr:last-child th:first-child,
+#airconditiontable tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* 左下角的圆角*/
+}
+/* tbody的最后1行、右端的元素*/
+tbody tr:first-child td:last-child {
+    border-bottom-right-radius: 10px; /* 右下角的圆角*/
+}
+.bottomleft{
+    border-bottom-left-radius: 10px;
+}
+.alt{
+    text-align: left;
+}
+.content{
+    width: 97.5%;
+    position: absolute;
+    margin: 0 auto;
+}

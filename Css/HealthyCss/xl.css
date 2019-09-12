@@ -1,0 +1,125 @@
+.tw{
+    position: relative;
+    float: left;
+    padding: 0 0 0 0;
+}
+.xl{
+    position: relative;
+    float:left;
+    padding: 0 0 0 0;
+}
+.twbp{
+    position: relative;
+    float: left;
+    padding: 0 0 0 0;
+    display: inline-block;
+}
+.xl1{
+    font-size: 1.2em;
+    position: relative;
+    float: left;
+    display: inline-block;
+    border: 1px dashed #1e9db6;
+    width: 100%;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.1em;
+}
+.borderclass{
+    position: relative;
+    width: 100%;
+    border: 1.5px solid #1e9db6;
+}
+.borderstyle{
+    position: relative;
+    border: 1px solid #1e9db6;
+}
+.xy{
+    float: left;
+    width: 30%;
+    margin-left: 14px;
+}
+.xl2{
+    position: relative;
+    float: left;
+    padding: 0 0 0 0;
+    margin-right: 14px;
+}
+.bloodsugertable table {
+    width:66.5%;
+    height:230px;
+    text-align: center;
+    float: left;
+    font-size: 1.47em;
+    position: relative;
+    margin-top:15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    border-top: 1px solid #888888;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #888888;
+    background-color: #FFFFFF;
+}
+.bloodsugertable th,td {
+    border-top: none;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-left: none;
+    vertical-align: middle;
+    text-align: center;
+}
+.bloodsugertable td {
+    background-color: #EFEFEF;
+}
+.bloodsugertable thead th,tfoot {
+    color: #FFFFFF;
+}
+.bloodsugertable thead th,tfoot th {
+    background-color: rgba(58, 127, 180, 0.37);
+}
+.bloodsugertable tbody th {
+    background-color: rgba(58, 127, 180, 0.29);
+}
+/* 第1行、左端的元素 */
+.bloodsugertable tr:first-child th:first-child,
+.bloodsugertable tr:first-child td:first-child {
+    border-top-left-radius: 10px; /* 左上角的圆角*/
+}
+/*第1行、右端的元素 */
+.bloodsugertable tr:first-child th:last-child,
+.bloodsugertable tr:first-child td:last-child {
+    border-top-right-radius: 10px; /* 右上角的圆角*/
+}
+/*使用thead时的tbody的第1行、左端的元素*/
+.bloodsugertable thead ~ tbody tr:first-child th:first-child,
+.bloodsugertable thead ~ tbody tr:first-child td:first-child {
+    border-top-left-radius: 0; /*每一个左上角*/
+}
+/*使用thead时的tbody的第1行、右端的元素*/
+.bloodsugertable thead ~ tbody tr:first-child td:last-child {
+    border-top-right-radius: 0; /*每一个右上角 */
+}
+/* tbody的最后1行、左端的元素*/
+.bloodsugertable tbody tr:last-child th:first-child,
+.bloodsugertable tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* 左下角的圆角*/
+}
+/* tbody的最后1行、右端的元素*/
+.bloodsugertable tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* 右下角的圆角*/
+}
+.highcolor{
+    color:#c23531;
+    font-weight:bold
+}
+.lowcolor {
+    color: #e68b0f;
+    font-weight:bold
+}
+.content{
+    width: 97.5%;
+    margin: 0 auto;
+}

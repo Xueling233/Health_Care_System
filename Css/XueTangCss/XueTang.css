@@ -1,0 +1,46 @@
+
+#div1{
+	width: 50%;
+	height: 50%;
+	position: relative;
+    float: left;
+}
+			
+#div2{
+    width: 50%;
+	height: 280px;
+	position: relative;
+	float: left;
+	
+}          
+            
+#div3{
+    width: 35%;
+    position: relative;
+	float: left;
+   margin-top: 20px;
+}
+
+#div4{
+	width:50%;
+	height: 150px;
+	position: relative;
+	border: 1px dashed #1e9db6;
+	float: left;
+}
+
+#div3 .table1{
+    border: 1px solid #1e9db6;
+   	width:500px;
+   	height:350px;
+   	/*text-align: center;*/
+}  
+
+#div3 tr,td{
+   	border: 1px solid #1e9db6;
+   }
+.border1{
+	width: 100%;
+	border: 1px  solid #1DC7EA;
+	height: 60%;
+}
