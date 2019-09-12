@@ -1,0 +1,3 @@
+# Health_Care_System
+实验室智慧健康照护系统，展示老人生理信息，以及行为轨迹等
+使用JQuery+Bootstrap等前端框架，引用Echarts.js图形库展示老人的各项生理信息，行为统计与轨迹绘制
